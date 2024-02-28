@@ -1,0 +1,205 @@
+table {
+    width: 650px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+th,
+td {
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+th {
+    text-align: center;
+}
+
+thead {
+    text-align: center;
+
+    th {
+        background-color: #3b2f2f;
+    }
+}
+
+tbody {
+
+    text-align: center;
+}
+
+.image-crows {
+    position: absolute;
+    left: 25%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+
+
+
+}
+
+.image-book {
+    position: absolute;
+    left: 88%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+
+    transition: opacity 0.5s linear;
+    border-radius: 10px;
+
+
+}
+
+.background {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+    height: 75%;
+
+    background-color: #e4e4e4;
+
+    border: solid black 5px;
+
+    border-radius: 25px;
+
+    text-align: center;
+    font-family: "IM Fell English", serif;
+    font-style: italic;
+
+    font-size: 18px;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+
+
+}
+
+.header {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+    font-family: "IM Fell English", serif;
+    font-style: italic;
+
+    text-align: center;
+    background-color: black;
+    font-size: 20px;
+    letter-spacing: 18px;
+
+    width: 35%;
+    height: 12%;
+
+    border-radius: 20px;
+
+
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    color: #d69362;
+}
+
+
+
+/* The Magic */
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+    height: 8em;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s;
+}
+
+.accordion {
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    font-family: "PT Sans" sans-serif;
+}
+
+.accordion .accordion-item {
+    background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+    padding: 1.25em;
+    color: #eee;
+
+    border-radius: 20px;
+    margin: 25px;
+}
+
+.accordion h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 13.5px;
+    text-align: justify;
+}
+
+.accordion .accordion-item:nth-child(1) {
+    background-color: #B8956C;
+    background-image: linear-gradient(-90deg, #B8956C, #B8956C 2em, #B8956C);
+    border: solid black 4px;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+
+.accordion .accordion-item:nth-child(2) {
+    background-color: #B8956C;
+    background-image: linear-gradient(-90deg, #B8956C, #B8956C 2em, #B8956C);
+    border: solid black 4px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.accordion .accordion-item:nth-child(3) {
+    background-color: #B8956C;
+    background-image: linear-gradient(-90deg, #B8956C, #B8956C 2em, #B8956C);
+    border: solid black 4px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.accordion .accordion-item:nth-child(4) {
+    background-color: #B8956C;
+    background-image: linear-gradient(-90deg, #B8956C, #B8956C 2em, #B8956C);
+    border: solid black 4px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.small-screen-title {
+    display: none;
+}
+
+
+@media (max-width: 1170px) {
+    .header {
+        display: none;
+    }
+
+    .small-screen-title {
+        display: block;
+    }
+}
+
+@media (max-width:670px) {
+    body {
+        display: none;
+    }
+}
